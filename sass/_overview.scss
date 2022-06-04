@@ -1,0 +1,28 @@
+.overview {
+  @include section-padding;
+  margin-bottom: 16rem;
+  display: grid;
+
+  justify-items: center;
+
+  p,
+  h3 {
+    text-align: center;
+  }
+  &--heading,
+  .heading--3 {
+    text-align: center;
+    color: $color-neutral-blue;
+  }
+  &--image {
+    margin: 6rem 0;
+  }
+  &--text {
+    color: $color-neutral-grayish-blue;
+    margin-top: 1.3rem;
+  }
+}
+
+.sub--overview > div:not(:last-child) {
+  margin-bottom: 4rem;
+}

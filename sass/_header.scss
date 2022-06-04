@@ -13,7 +13,7 @@
   //   grid-template-rows: min-content repeat(3, max-content);
   align-content: center;
   justify-items: center;
-  padding: 0 3rem;
+  @include section-padding;
   &--logo {
     margin-bottom: 6rem;
   }
