@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 *,
 *::before,
 *::after {
@@ -9,6 +10,10 @@
 html {
   box-sizing: inherit;
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
