@@ -14,6 +14,56 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  padding: 0 3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.heading--1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.64rem;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+}
+
+.header {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+.header--logo {
+  margin-bottom: 6rem;
+}
+.header--text, .header--heading {
+  text-align: center;
+}
+.header--text {
+  margin: 1.5rem 0 3rem 0;
+}
+.header .buttons {
+  display: grid;
+  justify-self: stretch;
+}
+.header .buttons .btn-green {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

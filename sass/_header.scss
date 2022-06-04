@@ -1,0 +1,33 @@
+.header {
+  height: 100vh;
+  //   background-image: linear-gradient(
+  //       to bottom,
+  //       rgba(#fff, 0.1),
+  //       rgba(#fff, 0.9) 50%
+  //     ),
+  //     url("../images/bg-header-mobile.png");
+  //   background-color: $color-neutral-grayish-blue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  &--logo {
+    margin-bottom: 6rem;
+  }
+  &--text,
+  &--heading {
+    text-align: center;
+  }
+  &--text {
+    margin: 1.5rem 0 3rem 0;
+  }
+  .buttons {
+    display: grid;
+    justify-self: stretch;
+    // font-size: 1.64rem;
+    .btn-green {
+      margin-bottom: 2rem;
+    }
+  }
+}
