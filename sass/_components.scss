@@ -8,6 +8,14 @@
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   //   padding: 1rem 0;
+  color: #fff;
+
   font-size: 1.8rem;
   padding: 1.5rem 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  &:hover {
+    box-shadow: none;
+  }
 }

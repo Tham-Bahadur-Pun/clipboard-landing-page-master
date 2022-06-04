@@ -14,7 +14,6 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
-  padding: 0 3rem;
 }
 
 img {
@@ -37,17 +36,26 @@ p {
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
+  color: #fff;
   font-size: 1.8rem;
   padding: 1.5rem 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.btn:hover {
+  box-shadow: none;
 }
 
 .header {
   height: 100vh;
+  background-image: linear-gradient(to bottom, transparent 0%, rgb(255, 255, 255)), url("../images/bg-header-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: grid;
   align-content: center;
   justify-items: center;
+  padding: 0 3rem;
 }
 .header--logo {
   margin-bottom: 6rem;
@@ -55,8 +63,12 @@ p {
 .header--text, .header--heading {
   text-align: center;
 }
+.header--heading {
+  color: hsl(210deg, 10%, 33%);
+}
 .header--text {
   margin: 1.5rem 0 3rem 0;
+  color: hsl(201deg, 11%, 66%);
 }
 .header .buttons {
   display: grid;
@@ -64,6 +76,27 @@ p {
 }
 .header .buttons .btn-green {
   margin-bottom: 2rem;
+  background-color: hsl(171deg, 66%, 44%);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.header .buttons .btn-green:hover, .header .buttons .btn-green:link {
+  background-color: rgba(38, 186, 164, 0.6);
+}
+.header .buttons .btn-blue {
+  color: #fff;
+  background-color: hsl(233deg, 100%, 69%);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.header .buttons .btn-blue:hover, .header .buttons .btn-blue:link {
+  background-color: rgba(97, 115, 255, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
