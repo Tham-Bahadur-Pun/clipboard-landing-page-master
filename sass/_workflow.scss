@@ -2,7 +2,7 @@
   @include section-padding;
   display: grid;
   justify-items: center;
-  max-width: 1200px;
+  max-width: $section-width;
   margin: 0 auto 17rem auto;
   .heading--2,
   .heading--3 {

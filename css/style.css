@@ -244,25 +244,63 @@ ul {
   justify-items: center;
 }
 
+.footer-section {
+  background-color: rgba(159, 171, 178, 0.1);
+}
+
 .footer {
+  max-width: 1200px;
   padding: 4rem 3rem;
   display: grid;
   justify-items: center;
   row-gap: 4rem;
-  background-color: rgba(159, 171, 178, 0.1);
+  margin: 0 auto;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer {
+    grid-template-columns: max-content 1fr min-content;
+    column-gap: 10rem;
+  }
 }
 .footer--image {
   width: 5rem;
+  align-self: center;
 }
 .footer--icons {
   display: flex;
   font-size: 2.8rem;
 }
+@media only screen and (min-width: 36.875em) {
+  .footer--icons {
+    align-items: center;
+  }
+}
 .footer--icons i:not(:last-child) {
   margin-right: 4rem;
 }
+@media only screen and (min-width: 36.875em) {
+  .footer--icons i:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+.footer--links {
+  display: grid;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--links {
+    grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+    justify-self: normal;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+}
 .footer--list:not(:last-child) {
   margin-bottom: 3rem;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--list:not(:last-child) {
+    margin: 0;
+  }
 }
 .footer--link {
   text-align: center;
@@ -277,6 +315,11 @@ ul {
 }
 .footer--link:hover {
   color: hsl(171deg, 66%, 44%);
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--link {
+    text-align: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
