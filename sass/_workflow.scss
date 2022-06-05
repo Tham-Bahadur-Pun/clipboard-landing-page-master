@@ -1,0 +1,36 @@
+.workflow {
+  @include section-padding;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 17rem;
+
+  .heading--2,
+  .heading--3 {
+    text-align: center;
+    color: $color-neutral-blue;
+  }
+  .heading--3 {
+    margin-top: 3rem;
+  }
+  &--text {
+    color: $color-neutral-grayish-blue;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  &--companies {
+    display: grid;
+    row-gap: 6rem;
+  }
+}
+.sub--workflow {
+  display: grid;
+  justify-items: center;
+  row-gap: 3rem;
+  margin: 6rem 0 20rem 0;
+  &_1,
+  &_2,
+  &_3 {
+    display: grid;
+    justify-items: center;
+  }
+}

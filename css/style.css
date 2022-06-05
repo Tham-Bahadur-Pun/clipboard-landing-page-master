@@ -25,7 +25,7 @@ img {
 }
 
 .heading--2 {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
 }
 
 .heading--3 {
@@ -151,6 +151,41 @@ p {
 }
 .access--image {
   margin: 6rem 0 9rem 0;
+}
+
+.workflow {
+  padding: 0 3rem;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 17rem;
+}
+.workflow .heading--2,
+.workflow .heading--3 {
+  text-align: center;
+  color: hsl(210deg, 10%, 33%);
+}
+.workflow .heading--3 {
+  margin-top: 3rem;
+}
+.workflow--text {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.workflow--companies {
+  display: grid;
+  row-gap: 6rem;
+}
+
+.sub--workflow {
+  display: grid;
+  justify-items: center;
+  row-gap: 3rem;
+  margin: 6rem 0 20rem 0;
+}
+.sub--workflow_1, .sub--workflow_2, .sub--workflow_3 {
+  display: grid;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
