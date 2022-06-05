@@ -33,10 +33,22 @@ p {
 .btn:hover {
   box-shadow: none;
 }
+@media only screen and (min-width: 36.875em) {
+  .btn {
+    padding: 1.5rem;
+  }
+}
 
 .buttons {
   display: grid;
   justify-self: stretch;
+}
+@media only screen and (min-width: 36.875em) {
+  .buttons {
+    grid-template-columns: max-content max-content;
+    justify-self: auto;
+    column-gap: 6rem;
+  }
 }
 .buttons .btn-green {
   margin-bottom: 2rem;
@@ -49,6 +61,11 @@ p {
 }
 .buttons .btn-green:hover, .buttons .btn-green:link {
   background-color: rgba(38, 186, 164, 0.6);
+}
+@media only screen and (min-width: 36.875em) {
+  .buttons .btn-green {
+    margin: 0;
+  }
 }
 .buttons .btn-blue {
   color: #fff;
@@ -187,7 +204,8 @@ ul {
   padding: 0 3rem;
   display: grid;
   justify-items: center;
-  margin-bottom: 17rem;
+  max-width: 1200px;
+  margin: 0 auto 17rem auto;
 }
 .workflow .heading--2,
 .workflow .heading--3 {
@@ -203,14 +221,22 @@ ul {
   margin-top: 1.5rem;
 }
 .workflow--companies {
+  width: 100%;
   display: grid;
+  grid-template-columns: repeat(auto-fit, 165px);
   row-gap: 6rem;
+  column-gap: 9rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub--workflow {
   display: grid;
-  justify-items: center;
-  row-gap: 3rem;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 356px));
+  column-gap: 3rem;
+  row-gap: 6rem;
   margin: 6rem 0 20rem 0;
 }
 .sub--workflow_1, .sub--workflow_2, .sub--workflow_3 {

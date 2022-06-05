@@ -18,11 +18,21 @@
   &:hover {
     box-shadow: none;
   }
+  @media only screen and (min-width: $bp-small) {
+    padding: 1.5rem;
+  }
 }
 .buttons {
   display: grid;
   justify-self: stretch;
+
   // font-size: 1.64rem;
+  @media only screen and (min-width: $bp-small) {
+    grid-template-columns: max-content max-content;
+
+    justify-self: auto;
+    column-gap: 6rem;
+  }
   .btn-green {
     margin-bottom: 2rem;
     background-color: $color-primary-cyan;
@@ -34,6 +44,9 @@
     &:hover,
     &:link {
       background-color: rgba($color-primary-cyan, 0.6);
+    }
+    @media only screen and (min-width: $bp-small) {
+      margin: 0;
     }
   }
   .btn-blue {

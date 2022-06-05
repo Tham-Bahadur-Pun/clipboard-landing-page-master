@@ -2,8 +2,8 @@
   @include section-padding;
   display: grid;
   justify-items: center;
-  margin-bottom: 17rem;
-
+  max-width: 1200px;
+  margin: 0 auto 17rem auto;
   .heading--2,
   .heading--3 {
     text-align: center;
@@ -18,19 +18,34 @@
     margin-top: 1.5rem;
   }
   &--companies {
+    width: 100%;
+
     display: grid;
+    grid-template-columns: repeat(auto-fit, 165px);
     row-gap: 6rem;
+    column-gap: 9rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 .sub--workflow {
   display: grid;
-  justify-items: center;
-  row-gap: 3rem;
+  justify-content: center;
+  width: 100%;
+
+  grid-template-columns: repeat(auto-fit, minmax(315px, 356px));
+
+  column-gap: 3rem;
+  row-gap: 6rem;
   margin: 6rem 0 20rem 0;
   &_1,
   &_2,
   &_3 {
     display: grid;
     justify-items: center;
+    // @media only screen and (min-width: $bp-small) {
+    //   justify-items: normal;
+    //   // row-gap: 0;
+    // }
   }
 }
