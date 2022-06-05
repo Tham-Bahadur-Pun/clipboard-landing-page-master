@@ -20,6 +20,17 @@
   &--icons {
     display: flex;
     // justify-content: space-between;
+    i {
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      &:hover {
+        color: $color-primary-cyan;
+      }
+    }
+
     @media only screen and (min-width: $bp-small) {
       align-items: center;
     }
