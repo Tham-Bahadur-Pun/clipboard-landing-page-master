@@ -13,9 +13,21 @@
   //   grid-template-rows: min-content repeat(3, max-content);
   align-content: center;
   justify-items: center;
+  @media only screen and (min-width: $bp-small) {
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgb(255, 255, 255)
+      ),
+      url("../images/bg-header-desktop.png");
+  }
   @include section-padding;
+
   &--logo {
     margin-bottom: 6rem;
+  }
+  &--text {
+    max-width: 56rem;
   }
   &--text,
   &--heading {

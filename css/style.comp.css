@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+.heading--1 {
+  font-size: 3rem;
+}
+
+.heading--2 {
+  font-size: 2.8rem;
+}
+
+.heading--3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.64rem;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.btn:hover {
+  box-shadow: none;
+}
+@media only screen and (min-width: 36.875em) {
+  .btn {
+    padding: 1.5rem;
+  }
+}
+
+.buttons {
+  display: grid;
+  justify-self: stretch;
+}
+@media only screen and (min-width: 36.875em) {
+  .buttons {
+    grid-template-columns: max-content max-content;
+    justify-self: auto;
+    column-gap: 6rem;
+  }
+}
+.buttons .btn-green {
+  margin-bottom: 2rem;
+  background-color: hsl(171deg, 66%, 44%);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.buttons .btn-green:hover, .buttons .btn-green:link {
+  background-color: rgba(38, 186, 164, 0.6);
+}
+@media only screen and (min-width: 36.875em) {
+  .buttons .btn-green {
+    margin: 0;
+  }
+}
+.buttons .btn-blue {
+  color: #fff;
+  background-color: hsl(233deg, 100%, 69%);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.buttons .btn-blue:hover, .buttons .btn-blue:link {
+  background-color: rgba(97, 115, 255, 0.6);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.64rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clipboard {
+  padding: 0 3rem;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 18rem;
+}
+.clipboard--heading, .clipboard--text {
+  text-align: center;
+}
+.clipboard--heading {
+  color: hsl(210deg, 10%, 33%);
+}
+.clipboard--text {
+  color: hsl(201deg, 11%, 66%);
+  margin-top: 1.5rem;
+  max-width: 62rem;
+}
+.clipboard .buttons {
+  margin-top: 3rem;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, transparent 0%, rgb(255, 255, 255)), url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 0 3rem;
+}
+@media only screen and (min-width: 36.875em) {
+  .header {
+    background-image: linear-gradient(to bottom, transparent 0%, rgb(255, 255, 255)), url("../images/bg-header-desktop.png");
+  }
+}
+.header--logo {
+  margin-bottom: 6rem;
+}
+.header--text {
+  max-width: 56rem;
+}
+.header--text, .header--heading {
+  text-align: center;
+}
+.header--heading {
+  color: hsl(210deg, 10%, 33%);
+}
+.header--text {
+  margin: 1.5rem 0 3rem 0;
+  color: hsl(201deg, 11%, 66%);
+}
+
+.overview {
+  padding: 0 3rem;
+  margin-bottom: 16rem;
+  display: grid;
+  justify-items: center;
+}
+.overview--sub_heading {
+  max-width: 63rem;
+}
+.overview p,
+.overview h3 {
+  text-align: center;
+}
+.overview--heading {
+  text-align: center;
+}
+.overview .heading--3, .overview--heading {
+  color: hsl(210deg, 10%, 33%);
+}
+.overview--image {
+  margin: 6rem 0;
+}
+.overview--text {
+  color: hsl(201deg, 11%, 66%);
+  margin: 1.3rem 0;
+}
+
+.sub--overview {
+  display: grid;
+  column-gap: 12rem;
+}
+@media only screen and (min-width: 50.68em) {
+  .sub--overview {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -6rem;
+  }
+}
+.sub--overview_main {
+  display: grid;
+  align-content: center;
+}
+@media only screen and (min-width: 50.68em) {
+  .sub--overview_main p,
+.sub--overview_main h3 {
+    max-width: 35rem;
+    text-align: initial;
+  }
+}
+
+.sub--overview_main > div:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.access {
+  padding: 0 3rem;
+  display: grid;
+  justify-items: center;
+}
+.access--heading, .access--text {
+  text-align: center;
+}
+.access--heading {
+  color: hsl(210deg, 10%, 33%);
+}
+.access--text {
+  color: hsl(201deg, 11%, 66%);
+  margin-top: 1.3rem;
+  max-width: 61rem;
+}
+.access--image {
+  margin: 6rem 0 9rem 0;
+}
+
+.workflow {
+  padding: 0 3rem;
+  display: grid;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto 17rem auto;
+}
+.workflow .heading--2,
+.workflow .heading--3 {
+  text-align: center;
+  color: hsl(210deg, 10%, 33%);
+}
+.workflow .heading--3 {
+  margin-top: 3rem;
+}
+.workflow--text {
+  color: hsl(201deg, 11%, 66%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.workflow--companies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 165px);
+  row-gap: 6rem;
+  column-gap: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub--workflow {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 356px));
+  column-gap: 3rem;
+  row-gap: 6rem;
+  margin: 6rem 0 20rem 0;
+}
+.sub--workflow_1, .sub--workflow_2, .sub--workflow_3 {
+  display: grid;
+  justify-items: center;
+}
+
+.footer-section {
+  background-color: rgba(159, 171, 178, 0.1);
+}
+
+.footer {
+  max-width: 1200px;
+  padding: 4rem 3rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 4rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer {
+    grid-template-columns: max-content 1fr min-content;
+    column-gap: 10rem;
+  }
+}
+.footer--image {
+  width: 5rem;
+  align-self: center;
+}
+.footer--icons {
+  display: flex;
+  font-size: 2.8rem;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--icons {
+    align-items: center;
+  }
+}
+.footer--icons i:not(:last-child) {
+  margin-right: 4rem;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--icons i:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+.footer--links {
+  display: grid;
+  width: 55%;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--links {
+    grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
+    justify-self: normal;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+}
+.footer--list:not(:last-child) {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--list:not(:last-child) {
+    margin: 0;
+  }
+}
+.footer--link {
+  text-align: center;
+  display: inherit;
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 400;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.footer--link:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+@media only screen and (min-width: 36.875em) {
+  .footer--link {
+    text-align: initial;
+  }
+}
+
+/*# sourceMappingURL=style.comp.css.map */

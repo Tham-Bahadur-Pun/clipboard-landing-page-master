@@ -4,25 +4,54 @@
   display: grid;
 
   justify-items: center;
-
+  &--sub_heading {
+    max-width: 63rem;
+  }
   p,
   h3 {
     text-align: center;
   }
-  &--heading,
-  .heading--3 {
+  &--heading {
     text-align: center;
+  }
+  .heading--3,
+  &--heading {
     color: $color-neutral-blue;
   }
   &--image {
     margin: 6rem 0;
+    @media only screen and (min-width: $bp-medium) {
+      // margin-left: -5rem;
+    }
   }
   &--text {
     color: $color-neutral-grayish-blue;
-    margin-top: 1.3rem;
+    margin: 1.3rem 0;
   }
 }
 
-.sub--overview > div:not(:last-child) {
+.sub--overview {
+  display: grid;
+  // grid-template-columns: repeat(2, max-content);
+  column-gap: 12rem;
+  @media only screen and (min-width: $bp-medium) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -6rem;
+  }
+  &_main {
+    display: grid;
+    align-content: center;
+
+    p,
+    h3 {
+      @media only screen and (min-width: $bp-medium) {
+        max-width: 35rem;
+
+        text-align: initial;
+      }
+    }
+  }
+}
+.sub--overview_main > div:not(:last-child) {
   margin-bottom: 4rem;
 }

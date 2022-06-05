@@ -34,6 +34,7 @@
 
   &--links {
     display: grid;
+    width: 55%;
     @media only screen and (min-width: $bp-small) {
       grid-template-columns: repeat(auto-fit, minmax(106px, 1fr));
       justify-self: normal;
