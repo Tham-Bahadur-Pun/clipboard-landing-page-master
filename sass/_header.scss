@@ -28,35 +28,4 @@
     margin: 1.5rem 0 3rem 0;
     color: $color-neutral-grayish-blue;
   }
-  .buttons {
-    display: grid;
-    justify-self: stretch;
-    // font-size: 1.64rem;
-    .btn-green {
-      margin-bottom: 2rem;
-      background-color: $color-primary-cyan;
-      transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      &:hover,
-      &:link {
-        background-color: rgba($color-primary-cyan, 0.6);
-      }
-    }
-    .btn-blue {
-      color: #fff;
-      background-color: $color-primary-blue;
-      transition: all 0.2s;
-      -webkit-transition: all 0.2s;
-      -moz-transition: all 0.2s;
-      -ms-transition: all 0.2s;
-      -o-transition: all 0.2s;
-      &:hover,
-      &:link {
-        background-color: rgba($color-primary-blue, 0.6);
-      }
-    }
-  }
 }

@@ -18,3 +18,24 @@ body {
 img {
   max-width: 100%;
 }
+
+.clipboard {
+  @include section-padding;
+  display: grid;
+  justify-items: center;
+  margin-bottom: 18rem;
+  &--heading,
+  &--text {
+    text-align: center;
+  }
+  &--heading {
+    color: $color-neutral-blue;
+  }
+  &--text {
+    color: $color-neutral-grayish-blue;
+    margin-top: 1.5rem;
+  }
+  .buttons {
+    margin-top: 3rem;
+  }
+}
