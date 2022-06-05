@@ -78,10 +78,19 @@ html {
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.64rem;
 }
 
 img {
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .clipboard {
@@ -207,6 +216,41 @@ img {
 .sub--workflow_1, .sub--workflow_2, .sub--workflow_3 {
   display: grid;
   justify-items: center;
+}
+
+.footer {
+  padding: 4rem 3rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 4rem;
+  background-color: rgba(159, 171, 178, 0.1);
+}
+.footer--image {
+  width: 5rem;
+}
+.footer--icons {
+  display: flex;
+  font-size: 2.8rem;
+}
+.footer--icons i:not(:last-child) {
+  margin-right: 4rem;
+}
+.footer--list:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.footer--link {
+  text-align: center;
+  display: inherit;
+  color: hsl(210deg, 10%, 33%);
+  font-weight: 400;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.footer--link:hover {
+  color: hsl(171deg, 66%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */
